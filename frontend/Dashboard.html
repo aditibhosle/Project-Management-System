@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head> <link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/mystyle.css">
+	   <link rel="stylesheet" href="./css/style.css">
+	   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	   
+        
+
+</head>
+
+<body>
+	<nav>
+        <ul>
+            <li id="brand">PROJECT MANAGEMENT</li>
+            <li><a  href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href="notices.html"><i class="fa fa-terminal" aria-hidden="true"></i>Notices</a></li>
+            <!-- <li><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Teams</a></li> -->
+            <li><a href="registration.html"><i class="fa fa-user-o" aria-hidden="true"></i>Signup</a></li>
+            <li><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
+        </ul>
+    </nav>
+</ul>
+
+ <footer>
+        <p>Copyright<i class="fa fa-copyright" aria-hidden="true"></i> PICT</p>
+        Made with <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> by Vanshika, Aniruddha and Aditi
+    </footer>
+
+
+
+
+
+
+<div class= "card">
+
+               <table style="width:25%; vertical-align: center;">
+					  <tr>
+					    <td><strong>Status: </strong></td>
+					    <td><strong>Approved ✅</strong></td> 
+					    
+					  </tr>
+					  <tr>
+					    <td>Suggestions:</td>
+					    <td><input type="text" id="sugg" name="sug" value=""><br></td> 
+					    
+					  </tr>
+					  <tr>
+					    <td>Next Deadline: </td>
+					   <td> <input type="date" id="deadp" name="dead"> </td>
+					  </tr> 
+					  		<td> <button onclick="RegFunction()" style = "align-self: :center" style=”width: 450px;”> Set </button> </td>
+					  <tr>	
+					  </tr>
+				</table>
+				<script type="text/javascript">
+  				function RegFunction(){
+  						var Sugges= document.getElementById("sugg").value;
+  						var sl = document.getElementById("sugg").value.length;
+						var Dead= document.getElementById("deadp").value;
+						var letters = /^[A-Za-z]+$/;
+  						if(sl<=0)
+							{
+								alert('Enter Suggestions');
+							}
+							else if(Dead == ''){
+								alert('Enter Date');
+
+							}
+							else{
+								alert('Response Submitted');
+							}
+							
+
+  					}
+
+  				</script>
+
+			</div>
+
+				<h2> Add Tasks  <button onclick="myFunction()" id = "demo" >➕</button> </h3>
+				<p id="demo"></p>
+				<script type="text/javascript">
+
+						function myFunction() {
+
+						  
+var myTable = document.getElementById("myTable");
+        var currentIndex = myTable.rows.length;
+        var currentRow = myTable.insertRow(-1);
+
+        var task1 = document.createElement("input");
+        task1.setAttribute("name", "links" + currentIndex);
+
+        var save1 = document.createElement("input");
+        save1.setAttribute("name", "keywords" + currentIndex);
+        save1.setAttribute("type", "button");
+        save1.setAttribute("value", "Save");
+        save1.setAttribute("onclick", "SaveFunctiono();");
+		
+        var dead1 = document.createElement("input");
+        dead1.setAttribute("type", "date");
+        dead1.setAttribute("name", "violationtype" + currentIndex);
+
+        
+        var ass1 = document.createElement("input");
+        ass1.setAttribute("name", "links" + currentIndex);
+
+        var currentCell = currentRow.insertCell(-1);
+        currentCell.appendChild(task1);
+
+        currentCell = currentRow.insertCell(-1);
+        currentCell.appendChild(dead1);
+
+        currentCell = currentRow.insertCell(-1);
+        currentCell.appendChild(ass1);
+
+        currentCell = currentRow.insertCell(-1);
+        currentCell.appendChild(save1);
+
+						}
+						
+						function SaveFunctiono(){
+  						var Task2= document.getElementById("task1").value;
+						var Dead2= document.getElementById("dead1").value;
+						var Assign2 = document.getElementById("ass1").value;
+  						var letters = /^[A-Za-z]+$/;
+  						var phn_exp=/^[0-9/-]+$/;
+
+  							if(Task2 == '' || Task2 == null)
+							{
+								alert('Enter The Task');
+								return 0;
+							}
+							else if(!letters.test(Task2))
+							{
+								alert('Enter Valid Task');
+							}
+							else if(Assign2 == null || Assign2=='')
+							{
+								alert('Assign the Assignment');
+								return 0;
+							}
+							else if(!letters.test(Assign2))
+							{
+								alert('Only Alphabet Characters in Assign To field');
+							}
+							else if(Dead2==''){
+								alert('Enter the Date');
+								return 0;
+							}
+							else{
+								alert('Response Saved');
+								return 1;
+							}
+
+  					}
+
+						
+						
+
+						
+
+				</script>
+
+				<table style="width:50%; margin-left: 24vw; " id = "myTable">
+					<tr ><th>Enter Tasks: </th>
+					    <th>Deadline</th> 
+					    <th>Assign To</th>
+					    
+					</tr>
+					<tr id = "qwe">
+					<td ><input type="text" id="task" name="task" value=""><br></td> 
+		
+					<td> 
+						<input  type="date" id="dead" name="dead"> 
+					</td>
+
+					<td><input type="text" id="ass" name="ass" value=""><br></td> 
+
+					<td> <button onclick="SaveFunction()" style=”width: 150px;”> Save </button>
+					</td>
+
+					</tr>
+
+					<script type="text/javascript">
+  				function SaveFunction(){
+  						var Task= document.getElementById("task").value;
+						var Dead1= document.getElementById("dead").value;
+						var Assign = document.getElementById("ass").value;
+  						var letters = /^[A-Za-z]+$/;
+  						var phn_exp=/^[0-9/-]+$/;
+
+  							if(Task == '' || Task == null)
+							{
+								alert('Enter The Task');
+								return false;
+							}
+							else if(Assign == null || Assign=='')
+							{
+								alert('Assign the Assignment');
+								return false;
+							}
+							else if(Dead1==''){
+								alert('Enter the Date');
+								return false;
+							}
+							else{
+								alert('Response Saved');
+								return false;
+							}
+							return true;
+
+  					}
+
+  				</script>
+				</table>
+
+
+
+
+				 <div class="projects" style="width: 80vw; padding: 2vw 3vw; margin-left: 15vw; ">
+            <div class="project-list">
+                <button>
+                    <a href="./project.html">
+                        <div class="project-card">
+                            <div class="project-image">
+                            	
+                            </div>
+                            <div class="project-details">
+                                <div class="project-name"><a href="https://github.com" >
+                                                             Project1</div>
+                                <div class="project-update">Last updated: 21/02/2021</div>
+                                </a>
+                            
+                    </a>
+                </button>
+            </div>
+
+                
+</body>
+<footer style="margin-left: -15vw; ">
+        <p>Copyright<i class="fa fa-copyright" aria-hidden="true"></i> PICT</p>
+        Made with <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> by Vanshika, Aniruddha and Aditi
+    </footer>
+
+</html>
