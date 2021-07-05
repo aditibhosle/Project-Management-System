@@ -1,0 +1,159 @@
+
+body{
+    margin: 0%;
+    background: url(https://img.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg?size=626&ext=jpg);
+    background-size: cover;
+    /* background: url(../\ img/bg2.jpg);
+    background-size: cover; */
+    opacity: 0.75;
+    text-align: center;
+}
+/*---- Nav Styling ----*/
+nav{
+    box-shadow: 0px 2px 15px rgb(116, 115, 115);
+}
+
+ul{
+    list-style-type:none;
+    background-color: rgb(29, 28, 28);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+li{
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+
+#brand{
+    color: honeydew;
+    float: left;
+    margin-right: 0%; 
+    letter-spacing: 2px;  
+}
+
+li a{
+    color: honeydew;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a i{
+    margin-right: 5px;
+    color: honeydew;
+}
+
+/* li a i:hover{
+    color: hotpink;
+} */
+
+li a:hover{
+    color: hotpink;
+}
+
+.main{
+    display: grid;
+    text-align: center;
+    margin:0;
+    justify-content: center;
+}
+
+h1{
+    color: rgb(36, 37, 36);
+    margin-top: 1.5em;
+    font-size: 50px;
+    font-weight: 10px;
+    text-shadow: 10px;
+}
+
+.main-card{
+    width: 70vw;
+    min-height: 29vw;
+    box-shadow: 0 0 1vw #00000073;
+    border-radius: 1vw;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-image: url('../\ img/bg6.jpg');
+    background-size: cover;
+    opacity:1
+}
+
+.main-card .img{
+    background-image: url('../\ img/bg1.jpg');
+    opacity: 1;
+}
+
+.main-content{
+    width: 25vw;
+    height: 25vw;
+    background-color: white;
+    position: relative;
+    margin-left: auto;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    padding: 2vw;
+}
+
+.main-content .img{
+    width: 25vw;
+    height: 25vw;
+    background-color: white;
+    position: relative;
+    margin-right: auto;
+    margin-left: unset;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    border-top-right-radius: 0vw;
+    border-bottom-right-radius: 0vw;
+    padding: 2vw;
+}
+
+.main-content h2{
+    margin: unset;
+}
+
+.main-content{
+    font-size: 20px;
+    color: rgb(36, 37, 36);
+    
+}
+
+.button {
+    width: 50%;
+    border: none;
+    border-radius: 1.5vw;
+    color: honeydew;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 10vw 5vw;
+    cursor: pointer;
+    background-color:  rgb(36, 37, 36);
+    background-size: cover;
+    font-size: 20px;
+    cursor: pointer;
+    
+  }
+
+.button i{
+      margin: 5px;
+  }
+
+footer{
+    text-align: center;
+    color: honeydew;
+    background-color: rgb(29, 28, 28) ;
+    bottom: 0%;
+    width: 100%;
+    padding-bottom: 8px;
+    position: fixed;
+}

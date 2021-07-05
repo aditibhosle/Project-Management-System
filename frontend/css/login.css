@@ -1,0 +1,88 @@
+h2{
+    color: rgb(36, 37, 36);
+    margin-top: 2em;
+    font-size: 40px;
+    font-weight: 10px;
+    text-shadow: 10px;
+}
+
+.login-card i{
+    margin-bottom: 1.2vw;
+    font-size:5vw;
+    color: rgb(36, 37, 36);
+}
+
+.login-card{
+    width: 25vw;
+    min-height: 25vw;
+    box-shadow: 0 0 1vw #00000073;
+    /* border-radius: 1vw; */
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+
+
+
+.login-form{
+    width: 21vw;
+    height: 25vw;
+    background-color: white;
+    position: relative;
+    margin-left: auto;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    padding: 2vw;
+}
+
+
+.login-form form input{
+    width: 90%;
+    padding: 0.8vw 0.8vw;
+    margin-bottom: 1.2vw;
+   /* margin: 1.2vw 0 1vw; */
+    background-color: rgb(228, 252, 255);
+    outline: none;
+    border: none;
+    border-radius: 0.3vw;
+}
+
+.login-form form input:focus{
+    outline: 1px solid black;
+}
+
+.login-form span.forgotpass{
+    font-size: 0.9vw;
+    margin: auto;
+    text-align: center;
+}
+
+.login-form .submit-btn{
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.submit-btn button{
+    width: 50%;
+    padding: 0.7vw;
+    margin-bottom: 1.5vw;
+    font-size: 1.1vw;
+    background-color: rgb(152, 240, 252);
+    color: #000;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 1.5vw;
+    cursor: pointer;
+}
+
+.submit-btn button:hover{
+    box-shadow: 0 0.41vw 12px rgba(63, 63, 63, 0.637);
+    background-color: rgb(171, 243, 138);
+    border: 1px solid #000;
+    transition: all 0.5s;
+}
