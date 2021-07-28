@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/style.css">
+<title>REGISTRATION</title>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: black; */
+  background: url(https://img.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg?size=626&ext=jpg);
+    background-size: cover;
+    /* background: url(../\ img/bg2.jpg);
+    background-size: cover; */
+    opacity: 0.75;
+}
+
+* {
+  box-sizing: border-box;
+}
+nav{
+  box-shadow: 0px 2px 15px rgb(116, 115, 115);
+}
+ul{
+  list-style-type:none;
+  background-color: rgb(29, 28, 28);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: right;
+}
+li{
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+#brand{
+  color: honeydew;
+  float: left;
+  margin-right: 0%; 
+  letter-spacing: 2px;  
+}
+
+li a{
+  color: honeydew;
+  text-decoration: none;
+  text-align: center;
+}
+
+li a i{
+  margin-right: 5px;
+  color: honeydew;
+}
+li a:hover{
+  color:  hotpink;
+}
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text],input[type=number], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  width: 40px;
+  height: 40px;
+}
+
+input[type=checkbox]{
+  width:15px;
+  height: 15px;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color:#1a721d;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  opacity: 0.9;
+}
+
+.resetbtn {
+  background-color: #1a721d;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+  background-color: #072408
+}
+
+.row1 {
+  flex: 1 1 auto;
+  margin-left: 5px;
+}
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+form div {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li id="brand">PROJECT MANAGEMENT</li>
+        <li><a  href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+        <li><a href="notices.html"><i class="fa fa-terminal" aria-hidden="true"></i>Notices</a></li>
+        <!-- <li><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Teams</a></li> -->
+        <li><a href="registration.html"><i class="fa fa-user-o" aria-hidden="true"></i>Signup</a></li>
+        <li><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
+    </ul>
+</nav>
+
+<form id="form" name="f1">
+  <div class="container">
+    <h2>REGISTER</h2>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <!-- Team details -->
+    <div style="display:inline-block">
+    <!-- <label for="team"><b>Team Leader</b></label> -->
+    <input style="width:47%" type="text" placeholder="Team Leader Name" id="leadername" name="leadername" required>
+    <!-- <label for="team"><b>Roll No.</b></label> -->
+    <input style="width:47%" type="number" placeholder="Roll Number" id="rollno" required>
+    </div>
+
+    <div style="display:inline-block">
+    <!-- <label for="team"><b>Team Member </b></label> -->
+    <input style="width:47%" type="text" placeholder="Name of Member 1" id="membername1" name="membername1" required> 
+    <!-- <label for="team"><b>Roll No.</b></label> -->
+    <input style="width:47%" type="number" placeholder="Roll Number" id="rollno" required>
+    </div>
+    
+    <div style="display:inline-block">
+    <!-- <label for="team"><b>Team Member</b></label> -->
+    <input  style="width:47%" type="text" placeholder="Name of Member 2" id="memebername2" name="memebername2">
+    <!-- <label for="team"><b>Roll No.</b></label> -->
+    <input style="width:47%" type="number" placeholder="Roll Number" id="rollno">
+    </div>
+
+    <div style="display:inline-block">
+    <!-- <label for="team"><b>Team Member</b></label> -->
+    <input style="width:47%" type="text" placeholder="Name of Member 3" id="membername3" name="membername3">
+    <!-- <label for="team"><b>Roll No.</b></label> -->
+    <input style="width:47%" type="number" placeholder="Roll Number" id="rollno">
+    </div>
+
+    <label for="team" style="display:block"><b>Team Name</b></label>
+    <input type="text" style="width: 1000px" placeholder="Team Name" id="teamname" name="teamname" required>
+
+    <label for="password1" style="display:block"><b>Password</b></label>
+    <input type="password" style="width: 1000px" placeholder="Enter Password (This password is commom for all team members)" id="password1" name="password1" required>
+
+    <label for="password2" style="display:block"><b>Repeat Password</b></label>
+    <input type="password" style="width: 1000px" placeholder="Repeat Password" name="password2" id="password2" required>
+    <hr>
+  
+    <input type="checkbox" name="accept">
+    <label for="terms&conditions">By creating an account you agree to our <a href="#">Terms & Privacy</label>
+    
+    <button type="submit" class="registerbtn" style="float:right; margin-left:20px" onclick="formValidation()" >REGISTER</button>
+    <button type="reset" class="resetbtn" style="float:right" value="Reset">CLEAR</button>
+
+  </div>
+</form>
+<script type="text/javascript">
+  function formValidation() {
+    var firstpassword=document.f1.password1.value;  
+    var secondpassword=document.f1.password2.value;  
+    var check = document.f1.accept.value;
+  
+if(firstpassword==secondpassword){
+  if(check.checked){
+  alert("Registration successful!");  
+  return true;
+  }
+  else{
+    alert("Please accept the terms and conditions!");
+    return false;
+  }
+}  
+else{  
+alert("password must be same!");  
+return false;  
+}  
+}
+</script>
+<!-- <script src="registrationValidator.js"></script> -->
+</body>
+</html>

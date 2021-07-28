@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type = "text/JavaScript" src="./js/valid.js"></script>
+
+    <title>Login</title>
+    <script>
+        var baseurl = "http://localhost:5000/api";
+        function loadUser(){
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("POST", baseurl + "/login", true);
+            xmlhttp.onreadystatechange = function(){
+                if(xmlhttp.readyState ===4 && xmlhttp.status === 200)
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="brand">PROJECT MANAGEMENT</li>
+            <li><a  href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href="notices.html"><i class="fa fa-terminal" aria-hidden="true"></i>Notices</a></li>
+            <!-- <li><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Teams</a></li> -->
+            <li><a href="registration.html"><i class="fa fa-user-o" aria-hidden="true"></i>Signup</a></li>
+            <li><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
+        </ul>
+    </nav>
+
+    <h2>LOGIN</h2>
+
+    <div class="login">
+        <div class="login-card">
+            <div class="login-form">
+                <center><i class="fa fa-user-circle-o" aria-hidden="true"></i></center>
+                <form class="login_form"  action="WTL.html" method="POST">
+                    <input type="text" placeholder="Team ID" id = "userid">
+                    <input type="password" placeholder="Password" id="password">
+                  </form>
+                  <form name="LoginForm" action="WTL.html" method="post" onSubmit="return formValidation()"> 
+                    <p><input type="submit" value="Login"></p>                                      
+
+ </form>
+                 <!-- <div class="submit-btn"><button action="WTL.html" onclick="formValidation()">Submit</button></a></div>
+-->
+                
+                  <!-- <form name="loginform" onsubmit="return validateForm()" method="post">
+                    <input type="text" id="tid" name="teamid" placeholder="Team ID">
+                    <input type="password" id="pswd" name="password" placeholder="Password">
+                    <div class="submit-btn"><button type="submit" onclick="validateForm()">Submit</button></a></div>
+                </form> -->
+                
+                <center><span class="forgotpass" style="margin-top:1vw">Don't have an account? <a href="./registration.html">Signup here</a></span></center>
+                <center><span class="forgotpass" style="margin-top:1vw">Forgot<a href="./index.html">Username/password?</a></span></center>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <p>Copyright<i class="fa fa-copyright" aria-hidden="true"></i> PICT</p>
+        Made with <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> by Vanshika, Aniruddha and Aditi
+    </footer>
+    
+    
+</body>
+</html>

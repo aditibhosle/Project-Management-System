@@ -1,0 +1,77 @@
+.navbar{
+    width: 17vw;
+    padding: 0 2vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    background-image: url(./img/bg.jpg);
+    box-shadow: -0.1vw 0px 1vw 0.4vw rgba(95, 95, 95, 0.397);
+    z-index: 2;
+}
+
+.navbar .profilepic{
+    text-align: center;
+    padding-top: 2vw;
+}
+
+.navbar .profilepic img{
+    width: 13vw;
+    height: 13vw;
+    border-radius: 20vw;
+    border: 0.3vw solid #FFF;
+}
+
+.navbar .profilepic .username{
+    margin: 1.8vw 0;
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: darkmagenta;
+}
+
+.navbar .nav-link{
+    font-size: 1.35vw;
+    text-align: center;
+    padding: 1.5vw 0;
+    border-bottom: 1px solid rgb(165, 0, 165);
+    transition: all 0.3s;
+}
+
+.navbar div.nav-link:last-child{
+    border-bottom: none;
+}
+
+.navbar .nav-link:hover{
+    background-color: rgba(165, 0, 165, 0.562);
+    color: #FFF;
+    cursor: pointer;
+}
+
+.navbar .nav-link.active{
+    background-color: rgba(165, 0, 165, 0.562);
+    color: #FFF;
+    cursor: pointer;
+}
+
+
+.nav-link a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar .logout{
+    position: absolute;
+    bottom: 0;
+    right: 1vw;
+    margin-bottom: 2vw;
+}
+
+.navbar .logout button{
+    font-size: 1.2vw;
+    background-color: transparent;
+    color: darkcyan;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
